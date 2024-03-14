@@ -17,22 +17,22 @@ public class Base {
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     private String id;
-
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(nullable = false, updatable = false)
-    private Date createdAt;
-
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date updatedAt;
-
-    @PrePersist
-    protected void onCreate() {
-        createdAt = new Date();
-    }
-
-    @PreUpdate
-    protected void onUpdate() {
-        updatedAt = new Date();
-    }
+//
+//    @Temporal(TemporalType.TIMESTAMP)
+//    @Column(nullable = false, updatable = false)
+//    private Date createdAt;
+//
+//    @Temporal(TemporalType.TIMESTAMP)
+//    private Date updatedAt;
+//
+//    @PrePersist
+//    protected void onCreate() {
+//        createdAt = new Date();
+//    }
+//
+//    @PreUpdate
+//    protected void onUpdate() {
+//        updatedAt = new Date();
+//    }
 
 }
